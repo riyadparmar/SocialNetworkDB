@@ -7,7 +7,6 @@ const messageSchema = new mongoose.Schema({
   bRead: { type: Boolean, default: false },
   sSubject: { type: String, default: '' },
   bIsArchived: { type: Boolean, default: false },
-  dCreatedAt: { type: Date, default: Date.now }
 },
 {
   timestamps: { createdAt: 'dCreatedAt', updatedAt: 'dUpdatedAt' }

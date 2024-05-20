@@ -4,8 +4,7 @@ const commentSchema = new mongoose.Schema({
   iUserID: { type: Schema.Types.ObjectId, ref: 'User', required: true },
   iPost: { type: Schema.Types.ObjectId, ref: 'Post', required: true },
   sContent: { type: String, required: true },
-  nLikesCount: { type: Number, default: 0 },
-  dCreatedAt: { type: Date, default: Date.now }
+  nLikesCount: { type: Number, default: 0 }
 },
 {
   timestamps: { createdAt: 'dCreatedAt', updatedAt: 'dUpdatedAt' }
